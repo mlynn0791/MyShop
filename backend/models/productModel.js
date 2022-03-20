@@ -27,11 +27,11 @@ user:{
     },
     image: {
         type: String,
-        required: trued
+        required: true
     },
     brand: {
         type: String,
-        required: trued
+        required: true
     },
     category: {
         type: String,
@@ -44,7 +44,7 @@ user:{
     reviews: [reviewSchema],
     rating: {
         type: Number, 
-        required: trued,
+        required: true,
         default: 0
     },
     price: {

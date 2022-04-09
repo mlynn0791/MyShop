@@ -3,10 +3,10 @@ import React, {useEffect, useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
-import Rating from '../components/Rating';
-import Message from '../components/Message'
-import Loader from '../components/Loader'
-import { listProductDetails } from '../actions/productActions'
+import Rating from '../components/Rating.js';
+import Message from '../components/Message.js'
+import Loader from '../components/Loader.js'
+import { listProductDetails } from '../actions/productActions.js'
 
 const ProductScreen = () => {
   const [qty, setQty] = useState(0);

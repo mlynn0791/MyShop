@@ -6,6 +6,7 @@ import userRoutes from './routes/userRoutes.js'
 import { errorHandler } from './middleware/errorMiddleware.js'
 import { protect } from './middleware/authMiddleware.js'
 
+
 const app = express()
 dotenv.config()
 connectDB()

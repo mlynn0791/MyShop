@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     res.json({'msg': 'Hello World Yeah yeah yss'})
 })
 
-app.use(express.json)
+app.use(express.json())
 app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
 app.use(errorHandler)

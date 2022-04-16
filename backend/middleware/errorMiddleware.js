@@ -1,9 +1,9 @@
-// const notFound = (req, res, next) => {
-//     console.log('I am in not found')
-//     const error =new Error(`Not found - ${req.originalUrl}`)
-//     res.status(404)
-//     next(error)
-// }
+const notFound = (req, res, next) => {
+    console.log('I am in not found')
+    const error =new Error(`Not found - ${req.originalUrl}`)
+    res.status(404)
+    next(error)
+}
 
 
 const errorHandler = (err, req, res, next) => {
@@ -18,4 +18,4 @@ const errorHandler = (err, req, res, next) => {
    })
 }
 
-export {errorHandler}
+export {errorHandler, notFound}
